@@ -87,8 +87,7 @@ header {
   margin-left: 2em; /* spacing between icons */
 }
 
-
-/* FOOTER */
+/* ========== FOOTER ========== */
 
 footer {
   border: 2px purple solid; /* dev only */
@@ -97,25 +96,42 @@ footer {
   text-align: center;
 }
 
+/* Social Media Icons */
 
-.footer-nav-section{
+.social-media {
+  margin: 2em 0 1em 0;
+}
+
+.social-media-list {
+  border: 2px pink solid; /* dev only */
+  display: flex;
+  justify-content: space-around; /* distribute icons evenly */
+  align-items: center;
+  padding: 1em;
+  width: 80%; /* constrain width on mobile */
+  margin: 0 auto;
+}
+
+/* Footer Navigation Columns */
+
+.footer-nav-section {
   border: 2px blue solid; /* dev only */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* stack columns vertically on mobile */
   margin-top: 2em;
 }
 
-.footer-nav{
+.footer-nav {
   border: 2px cyan solid; /* dev only */
   margin: 2em;
 }
 
 .footer-nav li {
-  margin-bottom: .6em;
+  margin-bottom: 0.6em; /* spacing between links */
 }
 
 .footer-nav h4 {
   color: var(--white-text);
   font-size: 1.5em;
-  margin-bottom: 1em;
+  margin-bottom: 1em; /* space before link list */
 }
