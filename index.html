@@ -2,12 +2,284 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mercedes-lp</title>
+    <title>Mercedes Benz</title>
+        <!-- ===== Fonts ===== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet" />
+        <!-- TODO: Delete unused font-weights, The font below should be Nuckle, but I'm cheap. Double check if Grotesk fits (footer) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet" />
+        
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="./src/css/variables.css" />
+        <link rel="stylesheet" href="./src/css/styles.css" />
+        </head>
+
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <!-- ======= HEADER ========== -->
+    <header>
+      <!-- Primary navigation -->
+      <nav class="main-nav">
+        <img class="mercedes-logo" src="./src/images/icon-mercedes.svg" alt="Mercedes Benz Logo" />
+        <!--TODO: improve alt-->
+        <ul class="main-nav-list">
+          <!-- Close Menu X -->
+          <li class="menu-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48.968" height="48.968" viewBox="0 0 48.968 48.968">
+              <g transform="translate(-378.092 -80.939)">
+                <path id="Path_21" data-name="Path 21" d="M383,82l-46.847,46.847" transform="translate(43)" fill="none"
+                  stroke="#000" stroke-width="3" />
+                <path id="Path_22" data-name="Path 22" d="M336.153,82l46.673,46.673" transform="translate(43)" fill="none"
+                  stroke="#000" stroke-width="3" />
+              </g>
+            </svg>
+          </li>
+          <li><a class="nav-link" href="#">Electric</a></li>
+          <li><a class="nav-link" href="#">Maybach</a></li>
+          <li><a class="nav-link" href="#">Accessories</a></li>
+          <li><a class="nav-link" href="#">Stories</a></li>
+        </ul>
+      </nav>
+      <!-- Secondary navigation (icons) -->
+      <nav>
+        <ul class="icon-nav-list">
+          <!--TODO: improve alts-->
+          <li>
+            <a href="#"><img src="./src/images/user-icon.png" alt="User icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./src/images/shopping-bag-icon.png" alt="Shopping cart icon" /></a>
+          </li>
+          <li class="burger-menu">
+            <a href="#"><img src="./src/images/burger-icon.png" alt="Burger menu" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- <main>
+      
+      <section class="hero">
+        <h2 class="section-title">New Mercedes CLS</h2>
+        <p>The power in your hands</p>
+      </section>
+    
+      
+      <section class="car-gallery">
+        <article class="card-container">
+          
+          <h3 class="card-title">Electric</h3>
+          <p>Mercedes E450 Cabriolet</p>
+          <img src="./assets/images/2023-E450-Cabriolet.png" alt="2023 E450 Mercedes Cabriolet" />
+          <div class="car-gal-container">
+            <a class="link-button" href="#">More Info</a>
+            <div class="color-container">
+              <div class="color-circle gray"></div>
+              <div class="color-circle red"></div>
+              <div class="color-circle blue"></div>
+              <div class="color-circle black"></div>
+            </div>
+          </div>
+        </article>
+        <article class="card-container">
+          
+          <h3 class="card-title">Hybrid</h3>
+          <p>Mercedes GLC SUV</p>
+          <img src="./assets/images/glc-suv-gasoline.png" alt="GSL SUV Gasoline" />
+          <div class="car-gal-container">
+            <a class="link-button" href="#">More Info</a>
+            <div class="color-container">
+              <div class="color-circle gray"></div>
+              <div class="color-circle red"></div>
+              <div class="color-circle blue"></div>
+              <div class="color-circle black"></div>
+            </div>
+          </div>
+        </article>
+        <article class="card-container">
+          
+          <h3 class="card-title">Hybrid</h3>
+          <p>Merces Benz-G-Class</p>
+          <img src="./assets/images/mercedes-benz-g-class.png" alt="Mercedes Benz G Class" />
+          <div class="car-gal-container">
+            <a class="link-button" href="#">More Info</a>
+            <div class="color-container">
+              <div class="color-circle gray"></div>
+              <div class="color-circle red"></div>
+              <div class="color-circle blue"></div>
+              <div class="color-circle black"></div>
+            </div>
+          </div>
+        </article>
+        <article class="card-container">
+          
+          <h3 class="card-title">Electric</h3>
+          <p>Mercedes GLC SUV</p>
+          <img src="./assets/images/fourth-car.png"
+            alt="Fourth Car" />
+          <div class="car-gal-container">
+            <a class="link-button" href="#">More Info</a>
+            <div class="color-container">
+              <div class="color-circle gray"></div>
+              <div class="color-circle red"></div>
+              <div class="color-circle blue"></div>
+              <div class="color-circle black"></div>
+            </div>
+          </div>
+        </article>
+        
+      </section>
+    
+      
+      <section class="dealerships">
+        
+        <h2 class="section-title">Find the nearest Mercedes dealer to you.</h2>
+        <p>
+          Browse over 1000 dealers worldwide, and find the one that best suits
+          your situation.
+        </p>
+        <div class="dealer-nightmap">
+          <div class="dealer-card-container">
+            <h2>Discover your local Mercedes partner store</h2>
+            <a href="#" class="link-button long-button">Find a partner store near you</a>
+          </div>
+        </div>
+      </section>
+    
+      
+      <section class="features">
+        <article class="card-container">
+          <h3>Confort</h3>
+          <img src="./assets/images/2021-mercedes-eqs-interior.jpg" alt="mercedes-eqs-interior" />
+          <a class="link-button" href="#">More Info</a>
+        </article>
+      </section>
+    
+      
+      <section class="maybach-red">
+        <h3>Red as tentation</h3>
+        <p>
+          Good design is what drives us, and we're proud to share that
+          Mercedes-Maybach has already won the prestigious Best Design Award
+          2023, as judged by the world's best product designers.
+        </p>
+      </section>
+    
+      
+      <section class="maybach-wheels">
+        <div class="container">
+          <h2>The Mercedes-Maybach wheel programme</h2>
+          <p>
+            The exclusive Mercedes-Maybach wheel programme, e.g. with optional
+            53.3 cm (21") Maybach forged wheels in multi-spoke design.
+          </p>
+          <a class="link-button" href="#">Learn More</a>
+        </div>
+        <img src="./assets/images/maybach-wheels.png" alt="Close-up to the Maybach Wheels" />
+      </section>
+    
+      
+      <section class="appointment">
+        <p>
+          Ready to own the car of your dreams?. Mercedes-Maybach are now
+          available in available at our dealers by appointment only.
+        </p>
+        <a class="link-button" href="#">Contact Now</a>
+      </section>
+    </main> -->
+    <!-- ================ /MAIN ================= -->
+    
+    <!-- ================= FOOTER ================= -->
+    <!-- <footer>
+      
+      <section class="join-newsletter">
+        <h3>Join the Power</h3>
+        <p>Sign up for our Newsletter</p>
+        <form action="POST">
+          
+          <label for="email">Enter your email address
+            here</label>
+          <input id="email" type="email" placeholder="Enter your email address here" />
+          <button type="submit" class="btn">Subscribe</button>
+          <input id="checkbox" type="checkbox" />
+          <label for="checkbox">By signing up, I agree to the <a href="#">privacy policy</a> of
+            Veloretti.</label>
+        </form>
+        <div class="social-media container">
+          <ul>
+            
+            <li>
+              <a href="#"><img src="./assets/images/icon-facebook.svg" alt="facebook icon" /></a>
+            </li>
+            
+            <li>
+              <a href="#"><img src="./assets/images/icon-instagram.svg" alt="instagram icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/images/icon-youtube.svg" alt="YouTube icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/images/icon-tiktok.svg" alt="TikTok icon" /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    
+      
+      <section class="footer-nav">
+        <nav class="footer-nav">
+          <h4>Explorer</h4>
+          <ul>
+            <li><a class="nav-link" href="#">Electric Bikes</a></li>
+            <li><a class="nav-link" href="#">City Bikes</a></li>
+            <li><a class="nav-link" href="#">Kids' Bikes</a></li>
+            <li><a class="nav-link" href="#">Accessories</a></li>
+            <li><a class="nav-link" href="#">Outlet</a></li>
+            <li><a class="nav-link" href="#">Business</a></li>
+            <li><a class="nav-link" href="#">Insurance Electric</a></li>
+            <li><a class="nav-link" href="#">Size Guide</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <h4>About</h4>
+          <ul>
+            <li><a class="nav-link" href="#">About Us</a></li>
+            <li><a class="nav-link" href="#">Journal</a></li>
+            <li><a class="nav-link" href="#">Reviews</a></li>
+            <li><a class="nav-link" href="#">Press</a></li>
+            <li><a class="nav-link" href="#">Jobs</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <h4>Help</h4>
+          <ul>
+            <li><a class="nav-link" href="#">Contact</a></li>
+            <li><a class="nav-link" href="#">Faq</a></li>
+            <li><a class="nav-link" href="#">Delivery</a></li>
+            <li><a class="nav-link" href="#">Assembly & manuals</a></li>
+            <li><a class="nav-link" href="#">Payment options</a></li>
+            <li><a class="nav-link" href="#">Privacy policy</a></li>
+            <li><a class="nav-link" href="#">Terms & conditions</a></li>
+          </ul>
+        </nav>
+      </section>
+    </footer> -->
+    <!-- ================ /FOOTER ================= -->
+
+
+
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

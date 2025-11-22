@@ -1,0 +1,16 @@
+:root {
+  --font-family-base: "abeezee","Inter", sans-serif;
+  --font-family-titles: "Abhaya Libre", Garamond, serif;
+  --font-family-footer: "Host Grotesk", sans-serif;
+  --text-color: #141615;
+  --footer-color: #FFFFFF99; 
+
+  --background: #EEEEEE;
+  --footer-background: #000000;
+  --card-background: #D9D9D9;
+  --appointment-background: #585858; /*TODO: Find the actual color with the color dropper*/
+
+  --white: #FFFFFF;
+  --white-text: #FFFFFF;
+  --black: #000000;
+}
