@@ -86,3 +86,36 @@ header {
 .secondary-nav-list li {
   margin-left: 2em; /* spacing between icons */
 }
+
+
+/* FOOTER */
+
+footer {
+  border: 2px purple solid; /* dev only */
+  background-color: var(--footer-background);
+  color: var(--text-color-footer);
+  text-align: center;
+}
+
+
+.footer-nav-section{
+  border: 2px blue solid; /* dev only */
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.footer-nav{
+  border: 2px cyan solid; /* dev only */
+  margin: 2em;
+}
+
+.footer-nav li {
+  margin-bottom: .6em;
+}
+
+.footer-nav h4 {
+  color: var(--white-text);
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
