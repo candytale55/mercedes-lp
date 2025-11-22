@@ -1,6 +1,6 @@
 /* Main Stylesheet */
 
-/* Reset & Base Styles */
+/* ========== RESET & BASE STYLES ========== */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body {
   line-height: 1.6;
 }
 
-/* Links - General */
+/* ========== GLOBAL ELEMENTS ========== */
 
 a {
   text-decoration: none;
@@ -31,60 +31,58 @@ ul {
   height: 25px;
 }
 
+/* ========== MOBILE FIRST STYLES ========== */
 
-/* Mobile First Styles */
-
-
-
+/* Header Container */
 header {
   display: flex;
   justify-content: space-between;
   overflow: hidden; /* prevent scrollbars */
-  padding: .5em;
-  border: solid 2px red;
+  padding: 0.5em;
+  border: solid 2px red; /* dev only */
   align-items: center;
 }
 
+/* ========== PRIMARY NAVIGATION ========== */
 
-
-.main-nav-list{
+.main-nav-list {
   /* TODO: Check what's best visibiity or display */
   /*visibility: hidden; /* hide menu by default on mobile */
   display: none; /* hide menu by default on mobile */
   text-align: right;
-  position: fixed;
+  position: fixed; /* overlay menu */
   top: 0;
   right: 0;
   background-color: var(--card-background);
   /* height: 100vh; */ /* TODO: decide if you want it to take all the vertical space or not */
-  border: solid 2px yellowgreen
+  border: solid 2px yellowgreen; /* dev only */
 }
 
 .main-nav-list li {
   display: block;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
 
-.main-nav-list li:first-child{
-  padding-top: 0; 
+.main-nav-list li:first-child {
+  padding-top: 0; /* remove extra space above close button */
   padding-bottom: 0;
 }
 
 .menu-close svg {
-  width: 1em;
+  width: 1em; /* size close icon */
 }
 
+/* ========== SECONDARY NAVIGATION ========== */
 
 .secondary-nav {
-  border: 2px orange solid;
+  border: 2px orange solid; /* dev only */
 }
 
 .secondary-nav-list {
-  display: flex; 
+  display: flex;
   align-items: center;
 }
+
 .secondary-nav-list li {
-  margin-left: 2em;
+  margin-left: 2em; /* spacing between icons */
 }
-
-
