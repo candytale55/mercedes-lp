@@ -466,7 +466,10 @@ header {
   text-align: center;
 }
 
-
+.appointment .link-button {
+  margin-top: 2em;
+  margin-bottom: 1em; 
+}
 
 
 /* ========== FOOTER ========== */
