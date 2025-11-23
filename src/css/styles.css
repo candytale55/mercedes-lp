@@ -32,6 +32,7 @@ ul {
   height: 25px;
 }
 
+/* Buttons */
 
 .link-button {
   display: inline-block;
@@ -49,9 +50,17 @@ ul {
   color: var(--white);
 }
 
-.uppercase{
-  text-transform: uppercase;
+.card-container .link-button {
+  padding: 0.5em 1em;
+  font-size: .9em;
 }
+
+.dealer-card-container .link-button {
+  padding: 1em 3em;
+  font-size: .8em;
+}
+
+/* Images */
 
 img{
   display: block;
@@ -65,6 +74,10 @@ img{
 } 
 
 /* Typography */
+
+.uppercase{
+  text-transform: uppercase;
+}
 
 .subtitle {
   font-family: var(--font-family-titles);
@@ -142,7 +155,7 @@ header {
   
   /* padding: 4rem 2rem; */
 
-  background-image: url(../images/hero-image.jpeg);
+  background-image: url(../images/mercedes-benz-coupe-hero.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -226,7 +239,7 @@ header {
 /* Nightmap subsection */
 
 .dealer-nightmap {
-  background-image: url(../images/dealer-night-map.png); /*TODO: Accessibility for background images*/
+  background-image: url(../images/usa-night-map-background.png); /*TODO: Accessibility for background images alt="Night satellite view of the United States showing illuminated cities."*/
   background-size: cover;
   background-position: center;
   height: 60svh;
@@ -254,9 +267,7 @@ header {
   width: 80%; /* constrain width for readability */
 }
 
-.dealer-card-container a {
-  font-size: .9em;
-}
+
 
 
 /* ========== MAYBACH RED SECTION ========== */
