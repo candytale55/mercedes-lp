@@ -45,6 +45,11 @@ ul {
   text-transform: uppercase;
 }
 
+.dark-button {
+  background-color: var(--black);
+  color: var(--white);
+}
+
 
 img{
   display: block;
@@ -124,30 +129,37 @@ header {
 
 /* ========== MAYBACH WHEELS SECTION ========== */
 
+/* TODO: Check why padding works ok in .maybach-wheels but not margin. */
+/* TODO: Use shorthand for padding and margin / merge rules?. */
+
 .maybach-wheels{
-  background-color: var(--white);
+  background-color: var(--white); /* white background for contrast */
   padding-left: 1em;
   padding-right: 1em;
-  padding-bottom: 2em;    
+  padding-bottom: 2em;
+  padding-top: 2em;    
 }
 
 .maybach-wheels .subtitle {
-  margin-bottom: .7em;
+  margin-bottom: .7em; /* space below heading */
 }
 
 .maybach-wheels img {
-  margin-bottom: 2em;
+  margin-bottom: 2em; /* space below wheel image */
 }
 
+.maybach-wheels p {
+  font-size: 1.1em; /* slightly larger text for readability */
+  margin-bottom: 1.5em; /* space before CTA button */
+}
 
-/* Appointment Section */
-
+/* ========== APPOINTMENT SECTION ========== */
 
 .appointment {
-  background-color: var(--appointment-background);
+  background-color: var(--appointment-background); /* dark background */
   color: var(--white-text);
   padding: 1.5em 2.5em;
-  font-size: 1.1em;
+  font-size: 1.1em; /* slightly larger text */
   text-align: center;
 }
 
