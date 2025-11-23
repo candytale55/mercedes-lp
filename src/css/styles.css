@@ -132,6 +132,46 @@ header {
   margin-left: 2em; /* spacing between icons */
 }
 
+/* ========== HERO SECTION ========== */
+
+.hero {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 40svh;  /* viewport height */
+  
+  /* padding: 4rem 2rem; */
+
+  background-image: url(../images/hero-image.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: .7em;
+}
+
+.hero .subtitle, .hero p {
+  color: var(--white-text);
+  text-align: left;
+  line-height: .9em;
+  margin: 0;
+}
+
+.hero .subtitle {
+  font-size: 2em;
+}
+
+.hero p {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+
+
+/* ========== CAR GALLERY SECTION ========== */
+
+
+
 
 /* ========== DEALERSHIP SECTION ========== */
 
