@@ -119,6 +119,8 @@ header {
 .main-nav-list li {
   display: block;
   padding: 0.5em 1em;
+  text-transform: uppercase;
+  font-size: .8em;
 }
 
 .main-nav-list li:first-child {
@@ -144,6 +146,36 @@ header {
 .secondary-nav-list li {
   margin-left: 2em; /* spacing between icons */
 }
+
+@media (min-width: 600px) {
+  /* Tablet and above styles can go here */
+
+  /* TODO: Funny navbar behaviour - fix */
+    .main-nav {
+      display: flex; /* show navbar on larger screens */
+      align-items: center;
+    }
+
+    .main-nav-list {
+    display: flex; /* show menu on larger screens */
+    flex-direction: row;
+    position: unset; /* reset position */ /*TODO: static or unset?*/
+    top: unset;
+    right: unset;
+    background-color: var(--background);
+    }
+
+    .main-nav-list li {
+      display: inline-block;
+      padding: 0 1em;
+    }
+
+    .menu-close svg, .burger-menu {
+      display: none; /* remove icons from navbar */
+    }
+
+}
+
 
 /* ========== HERO SECTION ========== */
 
@@ -371,3 +403,4 @@ footer {
   font-size: 1.5em;
   margin-bottom: 1em; /* space before link list */
 }
+
