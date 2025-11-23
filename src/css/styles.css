@@ -174,12 +174,15 @@ header {
 
 .car-gallery {
   border: solid 3px teal; /* dev only */
+  display: grid;
+  grid-template-columns: 1fr; /* single column on mobile */
+  margin-top: 1em;
 }
 
 .card-container {
   border: solid 2px darkred; /* dev only */
   background-color: var(--card-background); 
-  margin: 1em;
+  margin: .5em 1em;
   border-radius: var(--border-radius);
   overflow: hidden; /* ensure border-radius applies to children */
   padding: 1em; 
