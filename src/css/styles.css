@@ -68,9 +68,9 @@ img{
 
 .subtitle {
   font-family: var(--font-family-titles);
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.1;
   margin-bottom: .5em; /* TODO: Should it be here or dealt in each section - unify padding and margin? */
 }
 
@@ -138,7 +138,7 @@ header {
   display:flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 40svh;  /* viewport height */
+  height: 30svh;  /* viewport height */
   
   /* padding: 4rem 2rem; */
 
@@ -154,16 +154,16 @@ header {
   text-align: left;
   line-height: .9em;
   margin: 0;
+  letter-spacing: 1px;
 }
 
 .hero .subtitle {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .hero p {
-  font-size: 1.1em;
+  font-size: 1em;
   text-transform: capitalize;
-  letter-spacing: 1px;
 }
 
 
@@ -180,7 +180,7 @@ header {
   flex-direction: column;
   justify-content: space-around;  
   border: solid 2px blueviolet; /* dev only */
-  padding: 3em 2em; /*TODO: unify padding and margin? */
+  padding: 2em 2em; /*TODO: unify padding and margin? */
 }
 
 .dealerships .container p {
@@ -213,19 +213,28 @@ header {
 /* TODO: Need to add styling for very small devices - Text should adapt */
 
 .dealer-card-container h2 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 400;
   line-height: 1.2;
   width: 80%; /* constrain width for readability */
 }
 
+.dealer-card-container a {
+  font-size: .9em;
+}
+
 
 /* ========== MAYBACH RED SECTION ========== */
+
+.maybach-red {
+display: flex;
+flex-direction: column;
+}
 
 /* TODO: Unify paddings for all sections? */
 .maybach-red .container {
   border: solid 2px green; /* dev only */ 
-  padding: 1em 2em 2em;
+  padding: 1em 1em 2em;
 }
 
 
@@ -239,11 +248,11 @@ header {
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 2em;
-  padding-top: 2em;    
+  padding-top: 2em;  
 }
 
 .maybach-wheels .subtitle {
-  margin-bottom: .7em; /* space below heading */
+  margin-bottom: .6em; /* space below heading */
 }
 
 .maybach-wheels img {
@@ -251,7 +260,7 @@ header {
 }
 
 .maybach-wheels p {
-  font-size: 1.1em; /* slightly larger text for readability */
+  font-size: 1em; /* slightly larger text for readability */
   margin-bottom: 1.5em; /* space before CTA button */
 }
 
