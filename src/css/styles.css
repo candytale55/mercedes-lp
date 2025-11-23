@@ -46,7 +46,7 @@ ul {
 }
 
 .dark-button {
-  background-color: var(--black);
+  background-color: var(--footer-background);
   color: var(--white);
 }
 
@@ -57,6 +57,10 @@ img{
   height: auto;
   border-radius: var(--border-radius);
 }
+
+.hero-image {
+  border-radius: 0; /* override global img border-radius for hero image */
+} 
 
 /* Typography */
 
@@ -124,7 +128,13 @@ header {
   margin-left: 2em; /* spacing between icons */
 }
 
+/* ========== MAYBACH RED SECTION ========== */
 
+/* TODO: Unify paddings for all sections? */
+.maybach-red .container {
+  border: solid 2px green; /* dev only */ 
+  padding: 1em 2em 2em;
+}
 
 
 /* ========== MAYBACH WHEELS SECTION ========== */
@@ -133,7 +143,7 @@ header {
 /* TODO: Use shorthand for padding and margin / merge rules?. */
 
 .maybach-wheels{
-  background-color: var(--white); /* white background for contrast */
+  background-color: var(--white);
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 2em;
