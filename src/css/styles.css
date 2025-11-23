@@ -170,8 +170,40 @@ header {
 
 /* ========== CAR GALLERY SECTION ========== */
 
+/* TODO: Remove borders*/
 
+.car-gallery {
+  border: solid 3px teal; /* dev only */
+}
 
+.card-container {
+  border: solid 2px darkred; /* dev only */
+  background-color: var(--card-background); 
+  margin: 1em;
+  border-radius: var(--border-radius);
+  overflow: hidden; /* ensure border-radius applies to children */
+  padding: 1em; 
+}
+
+.card-bottom-container{
+  border: solid 2px darkorange; /* dev only */
+}
+
+.card-container img {
+  border: solid 2px darkgoldenrod; /* dev only */
+}
+
+.card-title {
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.product-card-image {
+  width: 100%;
+  height: 150px; /* or clamp() */
+  object-fit: contain;
+  margin-top: 1em;
+}
 
 /* ========== DEALERSHIP SECTION ========== */
 
