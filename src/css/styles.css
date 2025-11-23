@@ -206,8 +206,12 @@ header {
   background-color: #e2c324;
 }
 
-.blue-2 {
+.slate-blue {
   background-color: #515f91;
+}
+
+.muted-red {
+  background-color: #AE3F3F; 
 }
 
 /*TODO: Change name to class*/
