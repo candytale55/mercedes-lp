@@ -70,6 +70,8 @@ img{
   font-family: var(--font-family-titles);
   font-size: 2.5em;
   font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: .5em; /* TODO: Should it be here or dealt in each section - unify padding and margin? */
 }
 
 
@@ -133,7 +135,18 @@ header {
 
 /* ========== DEALERSHIP SECTION ========== */
 
+.dealerships .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+  border: solid 2px blueviolet; /* dev only */
+  padding: 3em 2em; /*TODO: unify padding and margin? */
+}
 
+.dealerships .container p {
+  font-size: 1.2em;
+  line-height: 1.2;
+}
 
 /* Nightmap subsection */
 
