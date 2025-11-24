@@ -81,14 +81,17 @@ img {
 
 .subtitle {
   font-family: var(--font-family-titles);
-  font-size: 2em;
+  font-size: 2em; /* 32px */
   font-weight: 400;
   line-height: 1.1;
   margin-bottom: .5em;
   /* TODO: Should it be here or dealt in each section - unify padding and margin? */
 }
 
-
+.card-title {
+  font-size: 1.875rem; /* 30px */
+  font-weight: 400;
+}
 
 /* ========== MOBILE FIRST STYLES ========== */
 
@@ -343,10 +346,7 @@ header {
   /* dev only */
 }
 
-.card-title {
-  font-size: 1.875rem;
-  font-weight: 400;
-}
+
 
 .product-card-image {
   width: 100%;
@@ -355,6 +355,10 @@ header {
   object-fit: contain;
   margin-top: 1em;
 }
+
+
+
+
 
 /* ========== DEALERSHIP SECTION ========== */
 
@@ -406,8 +410,21 @@ header {
   /* constrain width for readability */
 }
 
+/* ========== FEATURES SECTION ========== */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 
 
+.features img {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  border-radius: 0;
+}
 
 /* ========== MAYBACH RED SECTION ========== */
 
