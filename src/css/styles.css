@@ -81,7 +81,8 @@ img {
 
 .subtitle {
   font-family: var(--font-family-titles);
-  font-size: 2em; /* 32px */
+  font-size: 2em;
+  /* 32px */
   font-weight: 400;
   line-height: 1.1;
   margin-bottom: .5em;
@@ -89,7 +90,8 @@ img {
 }
 
 .card-title {
-  font-size: 1.875rem; /* 30px */
+  font-size: 1.875rem;
+  /* 30px */
   font-weight: 400;
 }
 
@@ -202,6 +204,8 @@ header {
 
 
 
+
+
 /* ========== CAR GALLERY SECTION ========== */
 
 /* TODO: Remove borders*/
@@ -215,7 +219,12 @@ header {
   margin-top: 1em;
 }
 
-
+.grid-container {
+  /* section.car-gallery */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  /* single column on mobile */
+}
 
 .card-container {
   /* border: solid 2px darkred; */
@@ -239,9 +248,9 @@ header {
 }
 
 .color-container {
-    /* border: solid 2px darkcyan; */
-    /* dev only */
-  }
+  /* border: solid 2px darkcyan; */
+  /* dev only */
+}
 
 
 
@@ -308,23 +317,23 @@ header {
 }
 
 .muted-red {
-  background-color: #AE3F3F; 
+  background-color: #AE3F3F;
 }
 
 /*TODO: Change name to class*/
 
 
-@media (min-width: 400px){
-.color-circle {
+@media (min-width: 400px) {
+  .color-circle {
     display: inline-block;
     /* show color circles on larger screens */
   }
-  
+
   .card-bottom-container,
   .color-container {
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
 }
 
@@ -360,6 +369,7 @@ header {
     display: none;
     /* remove icons from navbar */
   }
+
 }
 
 
@@ -488,7 +498,7 @@ header {
 
 .appointment .link-button {
   margin-top: 2em;
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
 }
 
 
