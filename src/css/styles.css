@@ -161,117 +161,7 @@ header {
   /* spacing between icons */
 }
 
-/* Color Circles */
 
-/* Color selector circles (hidden by default) */
-
-
-
-.card-bottom-container,
-.color-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-bottom-container {
-  padding: 1em 0;
-}
-
-.color-circle {
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
-  border: var(--white) solid 2px;
-  margin-left: 1em;
-  display: none;
-  /* Hidden until needed */
-}
-
-/* Color options for car customization */
-.gray {
-  background-color: #c5c5c5;
-}
-
-.red {
-  background-color: #b20000;
-}
-
-.blue {
-  background-color: #0010a1;
-}
-
-.black {
-  background-color: black;
-}
-
-.yellow {
-  background-color: #e2c324;
-}
-
-.slate-blue {
-  background-color: #515f91;
-}
-
-.muted-red {
-  background-color: #AE3F3F; 
-}
-
-/*TODO: Change name to class*/
-
-
-@media (min-width: 400px){
-.color-circle {
-    display: inline-block;
-    /* show color circles on larger screens */
-  }
-
-  .color-container {
-    border: solid 2px darkcyan;
-    /* dev only */
-  }
-  
-  .card-bottom-container,
-  .color-container {
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0; 
-  }
-}
-
-@media (min-width: 600px) {
-  /* Tablet and above styles can go here */
-
-  /* TODO: Funny navbar behaviour - fix */
-  .main-nav {
-    display: flex;
-    /* show navbar on larger screens */
-    align-items: center;
-  }
-
-  .main-nav-list {
-    display: flex;
-    /* show menu on larger screens */
-    flex-direction: row;
-    position: unset;
-    /* reset position */
-    /*TODO: static or unset?*/
-    top: unset;
-    right: unset;
-    background-color: var(--background);
-  }
-
-  .main-nav-list li {
-    display: inline-block;
-    padding: 0 1em;
-  }
-
-  .menu-close svg,
-  .burger-menu {
-    display: none;
-    /* remove icons from navbar */
-  }
-}
 
 
 /* ========== HERO SECTION ========== */
@@ -317,7 +207,7 @@ header {
 /* TODO: Remove borders*/
 
 .car-gallery {
-  border: solid 3px teal;
+  /* border: solid 3px teal; */
   /* dev only */
   display: grid;
   grid-template-columns: 1fr;
@@ -325,8 +215,10 @@ header {
   margin-top: 1em;
 }
 
+
+
 .card-container {
-  border: solid 2px darkred;
+  /* border: solid 2px darkred; */
   /* dev only */
   background-color: var(--card-background);
   margin: .5em 1em;
@@ -336,15 +228,21 @@ header {
   padding: 1em;
 }
 
-.card-bottom-container {
-  border: solid 2px darkorchid;
+.card-container img {
+  /* border: solid 2px darkgoldenrod; */
   /* dev only */
 }
 
-.card-container img {
-  border: solid 2px darkgoldenrod;
+.card-bottom-container {
+  /* border: solid 2px darkorchid; */
   /* dev only */
 }
+
+.color-container {
+    /* border: solid 2px darkcyan; */
+    /* dev only */
+  }
+
 
 
 
@@ -357,7 +255,112 @@ header {
 }
 
 
+/* Color Circles */
 
+/* Color selector circles (hidden by default) */
+
+.card-bottom-container,
+.color-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-bottom-container {
+  padding: 1em 0;
+}
+
+.color-circle {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: var(--white) solid 2px;
+  margin-left: 1em;
+  display: none;
+  /* Hidden until needed */
+}
+
+
+
+/* Color options for car customization */
+.gray {
+  background-color: #c5c5c5;
+}
+
+.red {
+  background-color: #b20000;
+}
+
+.blue {
+  background-color: #0010a1;
+}
+
+.black {
+  background-color: black;
+}
+
+.yellow {
+  background-color: #e2c324;
+}
+
+.slate-blue {
+  background-color: #515f91;
+}
+
+.muted-red {
+  background-color: #AE3F3F; 
+}
+
+/*TODO: Change name to class*/
+
+
+@media (min-width: 400px){
+.color-circle {
+    display: inline-block;
+    /* show color circles on larger screens */
+  }
+  
+  .card-bottom-container,
+  .color-container {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0; 
+  }
+}
+
+@media (min-width: 600px) {
+  /* Tablet and above styles can go here */
+
+  /* TODO: Funny navbar behaviour - fix */
+  .main-nav {
+    display: flex;
+    /* show navbar on larger screens */
+    align-items: center;
+  }
+
+  .main-nav-list {
+    display: flex;
+    /* show menu on larger screens */
+    flex-direction: row;
+    position: unset;
+    /* reset position */
+    /*TODO: static or unset?*/
+    top: unset;
+    right: unset;
+    background-color: var(--background);
+  }
+
+  .main-nav-list li {
+    display: inline-block;
+    padding: 0 1em;
+  }
+
+  .menu-close svg,
+  .burger-menu {
+    display: none;
+    /* remove icons from navbar */
+  }
+}
 
 
 /* ========== DEALERSHIP SECTION ========== */
